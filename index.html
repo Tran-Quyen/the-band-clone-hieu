@@ -18,36 +18,290 @@
       type="image/png"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
 
   <body>
     <div id="app">
-      <div class="header"></div>
+      <div class="header">
+        <ul class="nav-list">
+          <li class="nav">
+            <a href="!#" class="nav-link">Home</a>
+          </li>
+          <li class="nav"><a href="!#" class="nav-link">Band</a></li>
+          <li class="nav"><a href="!#" class="nav-link">Tour</a></li>
+          <li class="nav"><a href="!#" class="nav-link">Contact</a></li>
+          <li class="nav">
+            <a href="!#" class="nav-link">More</a>
+            <i class="fa-solid fa-caret-down"></i>
+
+            <ul class="subnav-list">
+              <li class="subnav">
+                <a href="!#" class="subnav-link">Merchandise</a>
+              </li>
+              <li class="subnav">
+                <a href="!#" class="subnav-link">Extras</a>
+              </li>
+              <li class="subnav">
+                <a href="!#" class="subnav-link">Media</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
 
       <!-- Bootstrap -->
       <div class="slider"></div>
 
       <div class="main">
         <div class="wrapper">
-          <div id="band" class="band"></div>
+          <div id="band" class="band">
+            <h3 class="base-title">The band</h3>
+            <p class="base-note">We love music</p>
+            <p class="band-description">
+              We have created a fictional band website. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <ul class="member-list">
+              <li class="member">
+                <h4 class="member-title">Name</h4>
+
+                <div class="member-cover">
+                  <img
+                    src="./assets/images/band/member.jpg"
+                    class="member-img"
+                    alt="Name"
+                  />
+                </div>
+              </li>
+              <li class="member">
+                <h4 class="member-title">Name</h4>
+
+                <div class="member-cover">
+                  <img
+                    src="./assets/images/band/member.jpg"
+                    class="member-img"
+                    alt="Name"
+                  />
+                </div>
+              </li>
+              <li class="member">
+                <h4 class="member-title">Name</h4>
+
+                <div class="member-cover">
+                  <img
+                    src="./assets/images/band/member.jpg"
+                    class="member-img"
+                    alt="Name"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="wrapper">
-          <div id="tour" class="tour"></div>
+          <div id="tour" class="tour">
+            <h3 class="base-title">Tour dates</h3>
+            <p class="base-note">Remember to book your tickets!</p>
+
+            <ul class="tour-ticket-list">
+              <li class="tour-ticket">
+                September <span class="tour-ticket-sold">Sold out</span>
+              </li>
+              <li class="tour-ticket">
+                October <span class="tour-ticket-sold">Sold out</span>
+              </li>
+              <li class="tour-ticket">
+                November <span class="tour-ticket-quantity"></span>
+              </li>
+            </ul>
+
+            <ul class="tour-place-list">
+              <li class="tour-place">
+                <div class="tour-place-cover">
+                  <img
+                    src="./assets/images/tour_place/new_york.jpg"
+                    alt="New York"
+                    class="tour-place-photo"
+                  />
+                </div>
+
+                <div class="tour-place-body">
+                  <h4 class="tour-place-title">New York</h4>
+                  <p class="tour-place-date">Fri 27 Nov 2016</p>
+                  <p class="tour-place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="base-btn">Buy tickets</button>
+                </div>
+              </li>
+              <li class="tour-place">
+                <div class="tour-place-cover">
+                  <img
+                    src="./assets/images/tour_place/paris.jpg"
+                    alt="Paris"
+                    class="tour-place-photo"
+                  />
+                </div>
+
+                <div class="tour-place-body">
+                  <h4 class="tour-place-title">Paris</h4>
+                  <p class="tour-place-date">Fri 28 Nov 2016</p>
+                  <p class="tour-place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="base-btn">Buy tickets</button>
+                </div>
+              </li>
+              <li class="tour-place">
+                <div class="tour-place-cover">
+                  <img
+                    src="./assets/images/tour_place/san_francisco.jpg"
+                    alt="San Francisco"
+                    class="tour-place-photo"
+                  />
+                </div>
+
+                <div class="tour-place-body">
+                  <h4 class="tour-place-title">San Francisco</h4>
+                  <p class="tour-place-date">Fri 29 Nov 2016</p>
+                  <p class="tour-place-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="base-btn">Buy tickets</button>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="wrapper">
-          <div id="contact" class="contact"></div>
+          <div id="contact" class="contact">
+            <h3 class="base-title">Contact</h3>
+            <p class="base-note">Fan? Drop a note!</p>
+
+            <ul class="contact-info-list">
+              <li class="contact-info">
+                <span> <i class="fa-solid fa-location-dot"></i> Address:</span
+                ><a
+                  href="https://www.google.com/maps/place/Chicago,+Illinois,+Hoa+K%E1%BB%B3/@41.8337734,-88.0616231,10z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?hl=vi-VN&entry=ttu"
+                  >Chicago, US</a
+                >
+              </li>
+              <li class="contact-info">
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                  Phone: </span
+                ><a href="tel:+00 151515">+00 151515</a>
+              </li>
+              <li class="contact-info">
+                <span>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: </span
+                ><a href="mailto:mail@mail.com">mail@mail.com</a>
+              </li>
+            </ul>
+
+            <form id="contact_form" class="contact-form">
+              <div class="contact-form-row">
+                <input
+                  type="text"
+                  class="contact-form-input"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  class="contact-form-input"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="contact-form-row">
+                <input
+                  type="text"
+                  class="contact-form-input full-w"
+                  placeholder="Message"
+                  required
+                />
+              </div>
+
+              <div class="contact-form-row">
+                <button class="base-btn">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 
-      <div class="map">
-        <img src="" alt="" />
-      </div>
+      <div class="footer">
+        <div class="footer-map">
+          <img src="./assets/images/map/map.jpg" alt="Map" />
+        </div>
 
-      <div class="footer"></div>
+        <ul class="social-list">
+          <li class="social">
+            <a href="!#" class="social-link"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="!#" class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="!#" class="social-link"
+              ><i class="fa-brands fa-snapchat"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="!#" class="social-link"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="!#" class="social-link"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="social">
+            <a href="!#" class="social-link"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div class="footer-copyright">
+          Powered by <a href="!#"> Quyen Dang </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
