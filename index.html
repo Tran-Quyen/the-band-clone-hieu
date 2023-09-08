@@ -27,12 +27,41 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Bootstrap 5.0.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
     <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
 
   <body>
-    <div id="app">
+    <div id="home">
       <div class="header">
         <ul class="nav-list">
           <li class="nav">
@@ -42,8 +71,9 @@
           <li class="nav"><a href="!#" class="nav-link">Tour</a></li>
           <li class="nav"><a href="!#" class="nav-link">Contact</a></li>
           <li class="nav">
-            <a href="!#" class="nav-link">More</a>
-            <i class="fa-solid fa-caret-down"></i>
+            <a href="!#" class="nav-link">
+              More <i class="fa-solid fa-caret-down"></i>
+            </a>
 
             <ul class="subnav-list">
               <li class="subnav">
@@ -65,11 +95,56 @@
       </div>
 
       <!-- Bootstrap -->
-      <div class="slider"></div>
+      <div class="slider">
+        <div
+          id="band_carousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+          data-bs-pause="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/slider/chicago.jpg"
+                class="d-block w-100"
+                alt="Chicago"
+              />
+
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago - A night we won't forget.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/new_york.jpg"
+                class="d-block w-100"
+                alt="New York"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>New York</h3>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/los_angeles.jpg"
+                class="d-block w-100"
+                alt="Los Angeles"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Los Angeles</h3>
+                <p>We had the best time playing at Venice Beach!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="main">
-        <div class="wrapper">
-          <div id="band" class="band">
+        <div id="band" class="band">
+          <div class="wrapper">
             <h3 class="base-title">The band</h3>
             <p class="base-note">We love music</p>
             <p class="band-description">
@@ -124,8 +199,8 @@
           </div>
         </div>
 
-        <div class="wrapper">
-          <div id="tour" class="tour">
+        <div id="tour" class="tour">
+          <div class="wrapper">
             <h3 class="base-title">Tour dates</h3>
             <p class="base-note">Remember to book your tickets!</p>
 
@@ -137,7 +212,7 @@
                 October <span class="tour-ticket-sold">Sold out</span>
               </li>
               <li class="tour-ticket">
-                November <span class="tour-ticket-quantity"></span>
+                November <span class="tour-ticket-quantity">3</span>
               </li>
             </ul>
 
@@ -157,7 +232,13 @@
                   <p class="tour-place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="base-btn">Buy tickets</button>
+                  <button
+                    class="base-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#bandModal"
+                  >
+                    Buy tickets
+                  </button>
                 </div>
               </li>
               <li class="tour-place">
@@ -175,7 +256,13 @@
                   <p class="tour-place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="base-btn">Buy tickets</button>
+                  <button
+                    class="base-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#bandModal"
+                  >
+                    Buy tickets
+                  </button>
                 </div>
               </li>
               <li class="tour-place">
@@ -193,15 +280,21 @@
                   <p class="tour-place-description">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="base-btn">Buy tickets</button>
+                  <button
+                    class="base-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#bandModal"
+                  >
+                    Buy tickets
+                  </button>
                 </div>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="wrapper">
-          <div id="contact" class="contact">
+        <div id="contact" class="contact">
+          <div class="wrapper">
             <h3 class="base-title">Contact</h3>
             <p class="base-note">Fan? Drop a note!</p>
 
@@ -300,6 +393,42 @@
 
         <div class="footer-copyright">
           Powered by <a href="!#"> Quyen Dang </a>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade base-modal"
+        id="bandModal"
+        tabindex="-1"
+        aria-labelledby="bandModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bandModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

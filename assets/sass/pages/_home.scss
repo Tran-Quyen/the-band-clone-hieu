@@ -1,0 +1,119 @@
+#home {
+  // Slider
+  .slider {
+    margin-top: var(--header-h);
+
+    .carousel-caption {
+      bottom: 2.9rem;
+
+      h3 {
+        font-family: var(--segoe-font);
+        font-size: 2.4rem;
+        margin: 1rem 0px 1.7rem;
+      }
+    }
+  }
+
+  // Main
+  // Band
+  .band {
+    &-description {
+      text-align: justify;
+      margin: 0 -1.5rem 1.5rem;
+    }
+
+    .member-list {
+      @include flex(start);
+      padding: 3.2rem 0;
+
+      .member {
+        &-title {
+          text-align: center;
+          margin: 1.5rem 0;
+        }
+
+        &-cover {
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+
+  // Tour
+  .tour {
+    background-color: #000;
+
+    .base-title,
+    .base-note {
+      color: #fff;
+    }
+
+    .tour-ticket-list {
+      background-color: #fff;
+      margin-top: 2.4rem;
+      margin-bottom: 3.2rem;
+
+      .tour-ticket {
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        padding: 8px 16px;
+        color: #757575;
+
+        &-sold {
+          display: inline-block;
+          padding: 0 8px;
+          color: #fff;
+          background-color: #f44336;
+          margin-left: 1.6rem;
+        }
+
+        &-quantity {
+          --size: 2.4rem;
+          position: absolute;
+          top: 50%;
+          right: 3.2rem;
+          transform: translateY(-50%);
+
+          display: block;
+          width: var(--size);
+          height: var(--size);
+          line-height: var(--size);
+          text-align: center;
+          color: #fff;
+          background-color: #000;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .tour-place-list {
+      @include flex(start);
+      gap: 1.6rem;
+
+      .tour-place {
+        flex: 1;
+
+        &-cover:hover {
+          opacity: 0.6;
+        }
+
+        &-body {
+          background-color: #fff;
+          padding: 1.6rem;
+        }
+
+        &-title {
+          font-weight: 700;
+        }
+
+        &-date {
+          margin: 1.5rem 0;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

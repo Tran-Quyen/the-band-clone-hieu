@@ -29,8 +29,8 @@
     - Band
     - Tour
     - Contact
-  - Map
   - Footer
+    - Map
 
 ### Build base layout
 

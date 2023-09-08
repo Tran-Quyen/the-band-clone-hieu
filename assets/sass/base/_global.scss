@@ -9,4 +9,14 @@ html {
 body {
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+// General
+.wrapper {
+  max-width: 100%;
+  width: 80rem;
+  margin: 0 auto;
+  padding: 6.4rem 1.6rem;
 }
