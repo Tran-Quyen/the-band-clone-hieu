@@ -73,6 +73,9 @@ body {
 }
 
 .header {
+  height: var(--header-h);
+}
+.header .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +101,7 @@ body {
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   z-index: 1000;
 }
-.header .nav-list {
+.header .header-inner .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,24 +118,24 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.header .nav-list .nav {
+.header .header-inner .nav-list .nav {
   position: relative;
 }
-.header .nav-list .nav .nav-link {
+.header .header-inner .nav-list .nav .nav-link {
   display: block;
   padding: 0 2.4rem;
   line-height: var(--header-h);
   color: #fff;
   text-transform: uppercase;
 }
-.header .nav-list .nav:hover .nav-link {
+.header .header-inner .nav-list .nav:hover .nav-link {
   background: #ccc;
   color: #000;
 }
-.header .nav-list .nav:has(.subnav-list):hover > .subnav-list {
+.header .header-inner .nav-list .nav:has(.subnav-list):hover > .subnav-list {
   display: block;
 }
-.header .nav-list .subnav-list {
+.header .header-inner .nav-list .subnav-list {
   display: none;
   min-width: 16rem;
   position: absolute;
@@ -142,23 +145,23 @@ body {
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.header .nav-list .subnav-list .subnav:hover .subnav-link {
+.header .header-inner .nav-list .subnav-list .subnav:hover .subnav-link {
   background: #ccc;
   color: #000;
 }
-.header .nav-list .subnav-list .subnav .subnav-link {
+.header .header-inner .nav-list .subnav-list .subnav .subnav-link {
   display: block;
   padding: 8px 16px;
   color: #000;
 }
-.header .search-btn {
+.header .header-inner .search-btn {
   height: var(--header-h);
   padding: 0 2.4rem;
   font-size: 1.5rem;
   background-color: #000;
   color: #fff;
 }
-.header .search-btn:hover {
+.header .header-inner .search-btn:hover {
   background-color: #f44336;
 }
 
@@ -214,9 +217,6 @@ body {
   background-color: #ccc;
 }
 
-#home .slider {
-  margin-top: var(--header-h);
-}
 #home .slider .carousel-caption {
   bottom: 2.9rem;
 }

@@ -1,74 +1,78 @@
 .header {
-  @include flex(space-between);
-  position: fixed;
-  // inset: 0 0 auto 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #000;
   height: var(--header-h);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  z-index: 1000;
 
-  .nav-list {
-    @include flex(start);
+  .header-inner {
+    @include flex(space-between);
+    position: fixed;
+    // inset: 0 0 auto 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: var(--header-h);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 1000;
 
-    .nav {
-      position: relative;
+    .nav-list {
+      @include flex(start);
 
-      .nav-link {
-        // padding-inline: 2.4rem;
-        display: block;
-        padding: 0 2.4rem;
-        line-height: var(--header-h);
-        color: #fff;
-        text-transform: uppercase;
-      }
+      .nav {
+        position: relative;
 
-      &:hover .nav-link {
-        background: #ccc;
-        color: #000;
-      }
+        .nav-link {
+          // padding-inline: 2.4rem;
+          display: block;
+          padding: 0 2.4rem;
+          line-height: var(--header-h);
+          color: #fff;
+          text-transform: uppercase;
+        }
 
-      &:has(.subnav-list):hover > .subnav-list {
-        display: block;
-      }
-    }
-
-    .subnav-list {
-      // inset: 0 auto auto 0;
-      display: none;
-      min-width: 16rem;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #fff;
-      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-
-      .subnav {
-        &:hover .subnav-link {
+        &:hover .nav-link {
           background: #ccc;
           color: #000;
         }
 
-        .subnav-link {
+        &:has(.subnav-list):hover > .subnav-list {
           display: block;
-          padding: 8px 16px;
-          color: #000;
+        }
+      }
+
+      .subnav-list {
+        // inset: 0 auto auto 0;
+        display: none;
+        min-width: 16rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .subnav {
+          &:hover .subnav-link {
+            background: #ccc;
+            color: #000;
+          }
+
+          .subnav-link {
+            display: block;
+            padding: 8px 16px;
+            color: #000;
+          }
         }
       }
     }
-  }
 
-  .search-btn {
-    height: var(--header-h);
-    padding: 0 2.4rem;
-    font-size: 1.5rem;
-    background-color: #000;
-    color: #fff;
+    .search-btn {
+      height: var(--header-h);
+      padding: 0 2.4rem;
+      font-size: 1.5rem;
+      background-color: #000;
+      color: #fff;
 
-    &:hover {
-      background-color: #f44336;
+      &:hover {
+        background-color: #f44336;
+      }
     }
   }
 }
