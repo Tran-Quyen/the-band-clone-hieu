@@ -162,6 +162,47 @@ body {
   background-color: #f44336;
 }
 
+.footer .footer-map img {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.footer .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6.4rem;
+  margin-bottom: 1.5rem;
+}
+.footer .social-list a {
+  color: #000;
+  opacity: 0.6;
+  font-size: 2.4rem;
+}
+.footer .social-list a:hover {
+  opacity: 0.4;
+}
+.footer-copyright {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+.footer-copyright a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
 .base-btn {
   min-width: 12rem;
   height: 4rem;
@@ -293,4 +334,74 @@ body {
 #home .tour .tour-place-list .tour-place-date {
   margin: 1.5rem 0;
   opacity: 0.6;
+}
+#home .contact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#home .contact-inner .contact-info-list,
+#home .contact-inner .contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#home .contact-inner .contact-info-list {
+  font-size: 1.8rem;
+}
+#home .contact-inner .contact-info-list .contact-info i {
+  display: inline-block;
+  width: 2rem;
+}
+#home .contact-inner .contact-info-list .contact-info a {
+  color: #000;
+}
+#home .contact-inner .contact-info-list .contact-info a:hover {
+  opacity: 0.6;
+}
+#home .contact-inner .contact-form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+#home .contact-inner .contact-form-row .contact-form-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+#home .contact-inner .contact-form-row .contact-form-input:focus {
+  outline-color: #2cccff;
+}
+#home .contact-inner .contact-form-row:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }

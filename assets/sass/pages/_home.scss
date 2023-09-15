@@ -116,4 +116,53 @@
       }
     }
   }
+
+  // Contact
+  .contact {
+    &-inner {
+      @include flex(start, start);
+
+      .contact-info-list,
+      .contact-form {
+        flex: 1;
+      }
+
+      .contact-info-list {
+        font-size: 1.8rem;
+
+        .contact-info i {
+          display: inline-block;
+          width: 2rem;
+        }
+
+        .contact-info a {
+          color: #000;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+
+      .contact-form-row {
+        @include flex(start, start, no-wrap);
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        .contact-form-input {
+          flex: 1;
+          padding: 8px;
+          border: 1px solid #ccc;
+
+          &:focus {
+            outline-color: #2cccff;
+          }
+        }
+
+        &:last-child {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
 }
