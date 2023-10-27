@@ -82,41 +82,87 @@
 
     <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <script src="./assets/js/main.js" defer></script>
   </head>
 
   <body>
     <div id="home">
       <div id="header" class="header">
         <div class="header-inner">
-          <ul class="nav-list">
-            <li class="nav">
-              <a href="!#" class="nav-link">Home</a>
-            </li>
-            <li class="nav"><a href="!#" class="nav-link">Band</a></li>
-            <li class="nav"><a href="!#" class="nav-link">Tour</a></li>
-            <li class="nav"><a href="!#" class="nav-link">Contact</a></li>
-            <li class="nav">
-              <a href="!#" class="nav-link">
-                More <i class="fa-solid fa-caret-down"></i>
-              </a>
+          <!-- Nav desktop -->
+          <div class="nav-desktop">
+            <ul class="nav-list">
+              <li class="nav">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav"><a href="#band" class="nav-link">Band</a></li>
+              <li class="nav"><a href="#tour" class="nav-link">Tour</a></li>
+              <li class="nav">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav">
+                <a class="nav-link">
+                  More <i class="fa-solid fa-caret-down"></i>
+                </a>
 
-              <ul class="subnav-list">
-                <li class="subnav">
-                  <a href="!#" class="subnav-link">Merchandise</a>
-                </li>
-                <li class="subnav">
-                  <a href="!#" class="subnav-link">Extras</a>
-                </li>
-                <li class="subnav">
-                  <a href="!#" class="subnav-link">Media</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+                <ul class="subnav-list">
+                  <li class="subnav">
+                    <a href="#" class="subnav-link">Merchandise</a>
+                  </li>
+                  <li class="subnav">
+                    <a href="#" class="subnav-link">Extras</a>
+                  </li>
+                  <li class="subnav">
+                    <a href="#" class="subnav-link">Media</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
-          <button class="search-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <!-- Nav mobile -->
+          <div class="nav-mobile">
+            <a href="#" class="nav-mobile-home">Home</a>
+
+            <button
+              class="nav-mobile-menu"
+              aria-label="Toggle Navigation Menu"
+              title="Toggle Navigation Menu"
+              data-toggle-menu="nav"
+            >
+              <i class="fa-solid fa-bars"></i>
+              <span>Toggle Navigation Menu</span>
+            </button>
+
+            <ul class="nav-list" data-menu="nav">
+              <li class="nav"><a href="#band" class="nav-link">Band</a></li>
+              <li class="nav"><a href="#tour" class="nav-link">Tour</a></li>
+              <li class="nav">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav" data-toggle-menu="subnav">
+                <a href="javascript:void(0)" class="nav-link">
+                  More <i class="fa-solid fa-caret-down"></i>
+                </a>
+
+                <ul class="subnav-list" data-menu="subnav">
+                  <li class="subnav">
+                    <a href="#" class="subnav-link">Merchandise</a>
+                  </li>
+                  <li class="subnav">
+                    <a href="#" class="subnav-link">Extras</a>
+                  </li>
+                  <li class="subnav">
+                    <a href="#" class="subnav-link">Media</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -391,39 +437,39 @@
 
         <ul class="social-list">
           <li class="social">
-            <a href="!#" class="social-link"
+            <a href="#" class="social-link"
               ><i class="fa-brands fa-square-facebook"></i
             ></a>
           </li>
           <li class="social">
-            <a href="!#" class="social-link"
+            <a href="#" class="social-link"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </li>
           <li class="social">
-            <a href="!#" class="social-link"
+            <a href="#" class="social-link"
               ><i class="fa-brands fa-snapchat"></i
             ></a>
           </li>
           <li class="social">
-            <a href="!#" class="social-link"
+            <a href="#" class="social-link"
               ><i class="fa-brands fa-pinterest"></i
             ></a>
           </li>
           <li class="social">
-            <a href="!#" class="social-link"
+            <a href="#" class="social-link"
               ><i class="fa-brands fa-twitter"></i
             ></a>
           </li>
           <li class="social">
-            <a href="!#" class="social-link"
+            <a href="#" class="social-link"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
         </ul>
 
         <div class="footer-copyright">
-          Powered by <a href="!#"> Quyen Dang </a>
+          Powered by <a href="#"> Quyen Dang </a>
         </div>
       </div>
 

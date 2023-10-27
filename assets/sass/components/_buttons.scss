@@ -8,4 +8,8 @@
     color: #000;
     background-color: #ccc;
   }
+
+  @include mobile {
+    width: 100%;
+  }
 }
